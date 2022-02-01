@@ -1,0 +1,122 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+:root {
+  --clr-primary-300: #4087f2;
+  --clr-primary-400: #0d54bf;
+  --clr-primary-500: #021533;
+  --clr-secondary-300: #a566cc;
+  --clr-secondary-400: #723399;
+  --clr-secondary-500: #391a4d;
+  --clr-accent-300: #ea7b7f;
+  --clr-accent-400: #dd3137;
+  --clr-accent-500: #841519;
+  --clr-text-300: #dee9fc;
+  --font-open-sans: "Open Sans", sans-serif;
+  --font-dm-sans: "DM Sans", sans-serif;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-family: var(--font-open-sans);
+  font-size: 3.75rem;
+  font-weight: 500;
+  color: var(--clr-text-300);
+}
+p {
+  font-family: var(--font-dm-sans);
+}
+body {
+  background: var(--clr-primary-500);
+  color: var(--clr-text-300);
+  position: relative;
+}
+header {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.noise {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background: url("noise-gif.6198149e.gif") no-repeat;
+  background-size: cover;
+  opacity: 0.006;
+  z-index: -1;
+}
+/*# sourceMappingURL=index.b10d73a7.css.map */

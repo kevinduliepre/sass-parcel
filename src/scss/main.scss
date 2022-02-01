@@ -1,0 +1,34 @@
+@use "components";
+@use "util";
+@use "global";
+
+body {
+  background: var(--clr-primary-500);
+  color: var(--clr-text-300);
+  position: relative;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.noise {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background: url(../img/noise-gif.gif) no-repeat;
+  background-size: cover;
+  opacity: 0.006;
+  z-index: -1;
+}

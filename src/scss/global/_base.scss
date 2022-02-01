@@ -1,0 +1,14 @@
+@use "colors" as *;
+
+:root {
+  // colors
+  @each $color, $shade in $colors {
+    @each $prop, $value in $shade {
+      --clr-#{$color}-#{$prop}: #{$value};
+    }
+  }
+
+  // fonts
+  --font-open-sans: "Open Sans", sans-serif;
+  --font-dm-sans: "DM Sans", sans-serif;
+}

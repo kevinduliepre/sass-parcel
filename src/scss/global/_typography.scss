@@ -1,0 +1,15 @@
+@use "../util/" as *;
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-family: var(--font-open-sans);
+  font-size: rem(60);
+  font-weight: 500;
+  color: var(--clr-text-300);
+}
+
+p {
+  font-family: var(--font-dm-sans);
+}
